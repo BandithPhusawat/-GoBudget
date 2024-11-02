@@ -9,12 +9,12 @@ L.Marker.prototype.options.icon = L.icon({
 const center = { lat: 13.736717, lng: 100.523186 };
 
 export default function Map() {
-  function onEachFeature(feature: any, layer: L.Layer) {
-    if (feature.properties) {
-      const { popupContent } = feature.properties;
-      layer.bindPopup(popupContent);
-    }
-  }
+  // function onEachFeature(feature: any, layer: L.Layer) {
+  //   if (feature.properties) {
+  //     const { popupContent } = feature.properties;
+  //     layer.bindPopup(popupContent);
+  //   }
+  // }
 
   return (
     <MapContainer style={{ height: '70vh', width: 'auto' }} center={center} zoom={15}>
